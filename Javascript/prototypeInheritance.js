@@ -8,6 +8,8 @@
 //
 // In javascript, everything is an object and they all have a built in
 // property named PROTOTYPE.
+//
+// 'this' keyword refers to the instance of the object.
 function dog(){
   this.word = "hello";
 };
@@ -27,6 +29,8 @@ var rocky = new dog();
 // because it is an instance of dog. This is called a "prototype chain"
 console.log(rocky.color);
 
+// 'this' is a tricky topic that i am currently uncertain how its used
+// in javascript. In this instance, the keyword 'this' refers to the instance.
 dog.prototype.speak = function() {
   return this.word;
 }
